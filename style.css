@@ -411,7 +411,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-  background-color: var(--accent-hover);
+  background-color:#007bff; 
 }
 
 #form-success {
@@ -454,7 +454,7 @@ form button[type="submit"]:hover {
   font-size: 0.9rem;
   font-weight: 500;
   background-color: #f8f5f3;
-  color: #ef6c57;
+  color: var(--heading-color);
 }
 
 /* === Responsive Fixes === */

@@ -1,4 +1,3 @@
-// Theme Toggle Logic
 const toggleBtn = document.getElementById('theme-toggle');
 const currentTheme = localStorage.getItem('theme');
 const body = document.body;
