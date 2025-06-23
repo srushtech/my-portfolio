@@ -80,3 +80,78 @@
   text-align: center;
   margin-top: -1rem;
 }
+/* 📱 Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    width: 80%;
+  }
+
+  .sidebar ul li a {
+    font-size: 1.1rem;
+  }
+
+  .container,
+  .skills-container,
+  .education-container,
+  .internship-container,
+  .contact-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .subheading {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .about-intro,
+  p,
+  li {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-list {
+    padding-left: 0;
+  }
+
+  .about-list li {
+    padding-left: 0;
+  }
+
+  .cert-card,
+  .edu-card,
+  .internship-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 1.5rem 1rem;
+  }
+}
+

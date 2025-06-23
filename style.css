@@ -154,3 +154,70 @@ body {
   background-color: #1e1e2f;
   color: white;
 }
+/* ============================= */
+/* 📱 RESPONSIVE STYLES BELOW 🔽 */
+/* ============================= */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-typing {
+    font-size: 1rem;
+  }
+
+  .hero-right .hero-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .button-cute, .button-outline {
+    display: block;
+    margin: 0.7rem auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .sidebar {
+    width: 80%;
+  }
+
+  .sidebar-title {
+    font-size: 20px;
+  }
+
+  .sidebar ul li a {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
