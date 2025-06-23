@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internships | Srushti Kshirsagar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <link rel="stylesheet" href="internship.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">Srushti</div>
+    <ul class="sidebar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="internship.html" class="active">Internship</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Internship Section -->
+  <section class="internship-section">
+    <div class="container">
+      <h1 class="section-title">Internship Experience</h1>
+      <div class="internship-grid">
+
+        <!-- Internship 1 -->
+        <div class="intern-card">
+          <h3>Web Development Intern</h3>
+          <p class="intern-org">Hindavi Softtech Pvt. Ltd</p>
+          <span class="intern-date">July 2022 – Aug 2022</span>
+          <p class="intern-desc">
+            Worked on building responsive UI components using HTML, CSS, and JavaScript.
+          </p>
+          <button class="cert-btn" onclick="openModal('cert1')">View Certificate</button>
+        </div>
+
+        <!-- Certificate Modal 1 -->
+        <div id="cert1" class="cert-modal">
+          <div class="cert-content">
+            <iframe src="certificates/Hindavi certificate.pdf" frameborder="0"></iframe>
+            <button onclick="closeModal('cert1')">Close</button>
+          </div>
+        </div>
+
+        <!-- Internship 2 -->
+        <div class="intern-card">
+          <h3>Technical Intern</h3>
+          <p class="intern-org">Central Railways,Mumbai.</p>
+          <span class="intern-date">Nov 2024 – Jan 2025</span>
+          <p class="intern-desc">
+            During this internship, I gained practical exposure to the functioning of IT systems within the railway infrastructure. My responsibilities included assisting with documentation, understanding software workflows, and observing basic network operations. This experience provided insights into how computer engineering contributes to large-scale public sector operations.
+          </p>
+          <button class="cert-btn" onclick="openModal('cert2')">View Certificate</button>
+        </div>
+
+        <!-- Certificate Modal 2 -->
+        <div id="cert2" class="cert-modal">
+          <div class="cert-content">
+            <iframe src="certificates/central railway.pdf" frameborder="0"></iframe>
+            <button onclick="closeModal('cert2')">Close</button>
+          </div>
+        </div>
+        <!-- Internship 3 -->
+        <div class="intern-card">
+          <h3>Full-stack Intern</h3>
+          <p class="intern-org">Caygnus Tech Pvt. Ltd</p>
+          <span class="intern-date">Dec 2024 – Jan 2025</span>
+          <p class="intern-desc">
+            My role involved designing and integrating front-end components with back-end APIs, managing database interactions, and ensuring responsive UI across devices. 
+          </p>
+          <button class="cert-btn" onclick="openModal('cert3')">View Certificate</button>
+        </div>
+
+        <!-- Certificate Modal 3 -->
+        <div id="cert3" class="cert-modal">
+          <div class="cert-content">
+            <iframe src="certificates/Caygnus_certificate.pdf" frameborder="0"></iframe>
+            <button onclick="closeModal('cert3')">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f59e0b;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #f97316;
+  color: #fff;
+}

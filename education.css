@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5e1;
+  color: #1e1e2f;
+}
+
+.education-section {
+  margin-left: 250px;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #f43f5e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.edu-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border-left: 6px solid #f97316;
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+}
+
+.edu-card h3 {
+  color: #5e17eb;
+  margin-bottom: 0.5rem;
+}
+
+.edu-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.edu-card span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #f43f5e;
+  font-weight: 600;
+}

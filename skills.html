@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills | Srushti Kshirsagar</title>
+  <link rel="stylesheet" href="skills.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Sidebar Toggle -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-title">Srushti</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="active"><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="internship.html">Internship</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <section class="skills-section">
+  <h1 class="section-title">My Skills</h1>
+  <div class="skills-grid">
+    <div class="skill-card" onclick="openModal('webDevCert')">Web Development</div>
+    <div class="skill-card" onclick="openModal('linuxCert')">Linux & Scripting</div>
+    <div class="skill-card" onclick="openModal('progBasicsCert')">Java</div>
+    <div class="skill-card" onclick="openModal('toolsCert')">Python</div>
+    <div class="skill-card" onclick="openModal('writingCert')">Git & Github</div>
+    <div class="skill-card" onclick="openModal('extraCert')">SQL</div>
+  </div>
+
+  <!-- Example Modal -->
+  <div id="webDevCert" class="cert-modal">
+    <div class="cert-content">
+      <iframe src="certificates/web_development.pdf" frameborder="0"></iframe>
+      <br>
+      <button onclick="closeModal('webDevCert')">Return</button>
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,43 +1,38 @@
-const toggleBtn = document.getElementById('theme-toggle');
-const currentTheme = localStorage.getItem('theme');
-const body = document.body;
+// Sidebar Toggle
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
 
-if (currentTheme === 'dark') {
-  body.classList.add('dark');
-}
-
-toggleBtn.addEventListener('click', () => {
-  body.classList.toggle('dark');
-  const theme = body.classList.contains('dark') ? 'dark' : 'light';
-  localStorage.setItem('theme', theme);
+hamburger.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
 });
 
-// Optional: Form Submission Placeholder
-successMsg.classList.add('show');
-function openModal(id) {
-  document.getElementById(id).style.display = "flex";
+// Typing Effect
+const typedText = document.getElementById("typed-text");
+const roles = ["Redhat Ethusiast", "Linux Enthusiast", "Creative Coder"];
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const currentText = roles[index];
+  if (isDeleting) {
+    charIndex--;
+  } else {
+    charIndex++;
+  }
+
+  typedText.textContent = currentText.substring(0, charIndex);
+
+  if (!isDeleting && charIndex === currentText.length) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    index = (index + 1) % roles.length;
+    setTimeout(type, 200);
+  } else {
+    setTimeout(type, isDeleting ? 50 : 100);
+  }
 }
 
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    document.querySelectorAll(".project-card").forEach(card => {
-      observer.observe(card);
-    });
-  });
-
-
-
+document.addEventListener("DOMContentLoaded", type);

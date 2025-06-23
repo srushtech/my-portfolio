@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5e1;
+  color: #1e1e2f;
+}
+
+.projects-section {
+  margin-left: 250px;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #f43f5e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.projects-intro {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border-left: 6px solid #f43f5e;
+}
+
+.project-card h3 {
+  color: #5e17eb;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(to right, #f43f5e, #f97316);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+  background: linear-gradient(to right, #f97316, #f43f5e);
+}

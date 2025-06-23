@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5e1;
+  color: #1e1e2f;
+}
+.about-section {
+  position: relative;
+  padding: 4rem 2rem;
+  background-color: #fff5e1;
+  color: #1e1e2f;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  margin-left: 220px; /* to offset sidebar */
+  min-height: 100vh;
+}
+
+.about-bg-shape {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 150%;
+  height: 100%;
+  background: radial-gradient(circle at top left, #f43f5e 15%, transparent 60%),
+              radial-gradient(circle at bottom right, #f97316 10%, transparent 50%);
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.about-section .container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #f43f5e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #f97316;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.about-list li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "•";
+  color: #f43f5e;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}

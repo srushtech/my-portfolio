@@ -1,0 +1,112 @@
+.internship-section {
+  margin-left: 250px;
+  padding: 4rem 2rem;
+  background-color: #fff5e1;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;                    
+  flex-direction: column;          
+  align-items: center;    
+}
+.section-title {
+  font-size: 2.4rem;
+  color: #f43f5e;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.internship-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intern-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.intern-card:hover {
+  transform: translateY(-5px);
+}
+
+.intern-card h3 {
+  color: #5e17eb;
+  margin-bottom: 0.4rem;
+}
+
+.intern-org {
+  color: #f43f5e;
+  font-weight: 500;
+}
+
+.intern-date {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  color: #888;
+}
+
+.intern-desc {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cert-btn {
+  background-color: #f97316;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.cert-btn:hover {
+  background-color: #f43f5e;
+}
+
+.cert-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-content {
+  background: white;
+  padding: 1rem;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-content iframe {
+  width: 100%;
+  height: 70vh;
+  border: none;
+  border-radius: 8px;
+}
+
+.cert-content button {
+  margin-top: 1rem;
+  background-color: #5e17eb;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
